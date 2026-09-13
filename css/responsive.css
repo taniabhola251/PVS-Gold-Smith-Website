@@ -1,0 +1,272 @@
+@media (max-width: 800px) {
+  .header {
+    height: 72px;
+    padding: 0 6vw;
+  }
+  .logo {
+    width: 58px;
+    height: 58px;
+  }
+  .menu {
+    display: block;
+  }
+  .nav {
+    display: none;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    padding: 25px 8vw;
+    background: var(--black);
+    flex-direction: column;
+    gap: 18px;
+  }
+  .nav.open {
+    display: flex;
+  }
+  .phone {
+    font-size: 0;
+  }
+  .phone:after {
+    content: "☎";
+    font-size: 20px;
+  }
+  .hero {
+    min-height: 760px;
+    padding: 150px 8vw 80px;
+  }
+  .hero-image {
+    inset: 0;
+    opacity: 0.5;
+  }
+  .hero-image:after {
+    background: linear-gradient(90deg, var(--black), rgba(8, 8, 8, 0.5));
+  }
+  .hero h1 {
+    font-size: 68px;
+  }
+  .section,
+  .page-hero {
+    padding: 80px 8vw;
+  }
+  .grid-2 {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .split-image {
+    height: 420px;
+  }
+  .craft-grid,
+  .value-grid {
+    grid-template-columns: 1fr;
+  }
+  .craft img {
+    height: 390px;
+  }
+  .rate-row,
+  .rate-table {
+    display: flex;
+    overflow-x: auto;
+  }
+  .rate {
+    min-width: 160px;
+  }
+  .calc {
+    grid-template-columns: 1fr;
+  }
+  .total {
+    grid-column: auto;
+  }
+  .footer-top,
+  .footer-bottom {
+    display: block;
+  }
+  .footer-bottom p {
+    margin-top: 22px;
+  }
+  .actions {
+    flex-wrap: wrap;
+  }
+  .owner-placeholder {
+    height: 300px;
+  }
+}
+@media (max-width: 400px) {
+  .hero h1 {
+    font-size: 57px;
+  }
+  .section h2,
+  .page-hero h1 {
+    font-size: 48px;
+  }
+  .button {
+    padding: 12px 15px;
+  }
+}
+
+@media (max-width: 800px) {
+  .about-hero {
+    min-height: 760px;
+    padding: 150px 8vw 90px;
+  }
+  .about-hero-image {
+    background-position: 62% center;
+  }
+  .about-hero h1 {
+    font-size: 62px;
+  }
+  .hero-scroll {
+    right: 8vw;
+  }
+  .about-story-grid,
+  .craftsmanship-section,
+  .people-grid,
+  .visit-section {
+    grid-template-columns: 1fr;
+  }
+  .about-image-frame img,
+  .craftsmanship-image img {
+    height: 450px;
+  }
+  .image-caption {
+    right: 12px;
+  }
+  .section-heading-row {
+    display: block;
+    margin-bottom: 45px;
+  }
+  .section-heading-row p {
+    margin-top: 25px;
+  }
+  .collection-grid,
+  .feature-grid,
+  .values-list,
+  .testimonial-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .collection-card img {
+    height: 250px;
+  }
+  .values-list article,
+  .values-list article + article {
+    padding: 22px 14px 0 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .values-list article:nth-child(even) {
+    padding-left: 14px;
+    border-right: 0;
+  }
+  .values-list article:last-child {
+    border-bottom: 0;
+  }
+  .person-card {
+    grid-template-columns: 0.8fr 1fr;
+  }
+  .portrait-placeholder {
+    min-height: 340px;
+  }
+  .about-map {
+    min-height: 390px;
+  }
+}
+
+@media (max-width: 520px) {
+  .about-hero h1 {
+    font-size: 50px;
+  }
+  .about-hero-content > p:not(.eyebrow) {
+    font-size: 15px;
+  }
+  .collection-grid,
+  .feature-grid,
+  .testimonial-grid,
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+  .person-card {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .portrait-placeholder {
+    min-height: 300px;
+  }
+  .visit-details p {
+    grid-template-columns: 28px 95px 1fr;
+  }
+  .about-cta h2 {
+    font-size: 54px;
+  }
+}
+
+@media (max-width: 800px) {
+  .home-hero {
+    min-height: 760px;
+    padding: 145px 8vw 90px;
+  }
+  .home-hero-image {
+    background-position: 64% center;
+  }
+  .home-hero h1 {
+    font-size: 62px;
+  }
+  .hero-subtitle {
+    font-size: 15px;
+  }
+  .hero-scroll {
+    right: 8vw;
+  }
+  .home-intro {
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }
+  .home-intro-image img {
+    height: 430px;
+  }
+  .why-heading,
+  .collection-heading {
+    display: block;
+  }
+  .why-heading p,
+  .collection-heading .text-link {
+    margin-top: 22px;
+  }
+  .why-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .why-grid article:nth-child(even) {
+    padding-left: 22px;
+    border-right: 0;
+  }
+  .why-grid article:nth-child(-n + 2) {
+    border-bottom: 1px solid var(--line);
+  }
+  .home-gallery {
+    grid-template-columns: 1fr;
+  }
+  .home-gallery img {
+    height: 420px;
+  }
+}
+
+@media (max-width: 520px) {
+  .home-hero h1 {
+    font-size: 50px;
+  }
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+  .why-grid article,
+  .why-grid article + article,
+  .why-grid article:nth-child(even) {
+    padding-left: 0;
+    padding-right: 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .why-grid article:last-child {
+    border-bottom: 0;
+  }
+  .home-cta h2 {
+    font-size: 56px;
+  }
+}
